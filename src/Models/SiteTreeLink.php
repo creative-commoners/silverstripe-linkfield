@@ -49,6 +49,16 @@ class SiteTreeLink extends Link
         ];
     }
 
+    public function getSummary(): string
+    {
+        $page = $this->Page;
+        if ($page) {
+            return $page->URLSegment;
+        }
+
+        return '';
+    }
+
     public function getCMSFields(): FieldList
     {
         $fields = parent::getCMSFields();
@@ -91,6 +101,6 @@ class SiteTreeLink extends Link
 
     protected function FallbackTitle(): string
     {
-        return $this->Page ? $this->Page->Title : '';
+        return $this->Page ? ($this->Page->Title ?: '') : '';
     }
 }

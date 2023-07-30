@@ -27,6 +27,11 @@ class ExternalLink extends Link
         ];
     }
 
+    public function getSummary(): string
+    {
+        return $this->ExternalUrl;
+    }
+
     public function getURL(): string
     {
         return $this->ExternalUrl ?? '';

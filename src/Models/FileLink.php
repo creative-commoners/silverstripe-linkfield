@@ -41,6 +41,16 @@ class FileLink extends Link
         ];
     }
 
+    public function getSummary(): string
+    {
+        $file = $this->File;
+        if ($file) {
+            return $file->getFilename();
+        }
+
+        return '';
+    }
+
     public function LinkTypeHandlerName(): string
     {
         return 'InsertMediaModal';
@@ -53,6 +63,6 @@ class FileLink extends Link
 
     protected function FallbackTitle(): string
     {
-        return $this->File ? $this->File->Title : '';
+        return $this->File ? (string)$this->File->Title : '';
     }
 }

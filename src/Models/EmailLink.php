@@ -18,6 +18,8 @@ class EmailLink extends Link
         'Email' => 'Varchar(255)',
     ];
 
+    private static string $icon = 'p-mail';
+
     public function generateLinkDescription(array $data): array
     {
         $description = isset($data['Email']) ? $data['Email'] : '';

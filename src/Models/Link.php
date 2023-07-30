@@ -2,6 +2,7 @@
 
 namespace SilverStripe\LinkField\Models;
 
+use Exception;
 use InvalidArgumentException;
 use ReflectionException;
 use SilverStripe\Core\ClassInfo;
@@ -41,12 +42,6 @@ class Link extends DataObject implements JsonData, Type
      */
     private ?string $linkType = null;
 
-    private static $has_one = [
-        'Owner' => DataObject::class
-    ];
-
-    private static $icon = 'link';
-
     public function defineLinkTypeRequirements()
     {
         Requirements::add_i18n_javascript('silverstripe/linkfield:client/lang', false, true);
@@ -65,6 +60,11 @@ class Link extends DataObject implements JsonData, Type
             'title' => '',
             'description' => ''
         ];
+    }
+
+    public function getSummary(): string
+    {
+        return $this->FallbackTitle();
     }
 
     public function LinkTypeTitle(): string
@@ -284,11 +284,28 @@ class Link extends DataObject implements JsonData, Type
      */
     public function FrontendTitle(): string
     {
-        return $this->Title ?: $this->FallbackTitle();
+        return $this->getField('Title') ?: $this->FallbackTitle();
     }
 
     protected function FallbackTitle(): string
     {
         return '';
+    }
+
+    public function getTitle()
+    {
+        return $this->FrontendTitle();
+    }
+
+    /**
+     * Event handler called before deleting from the database.
+     *
+     * @uses DataExtension->onBeforeDelete()
+     */
+    public function onBeforeDelete()
+    {
+        // throw new Exception('This is a test exception');
+        parent::onBeforeDelete();
+
     }
 }
