@@ -23,4 +23,4 @@ An important aspect to highlight is that newly generated links are automatically
 
 ## User manual
 
-[CHILDREN Folder=01_User_manual]
+[CHILDREN includeFolders]

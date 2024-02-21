@@ -7,7 +7,7 @@ summary: Primary link types provided by the LinkField module.
 
 The main types of links listed in this section are accessible to users by default. This list may change, potentially expanding if developers introduce additional link types, or shrinking as detailed in the ["Allowed types"](#allowed-types) section.
 
-![A screenshot of the links type allowed by default](../_images/01_links_types/link_types.png)
+![A screenshot of the links type allowed by default](./_images/01_links_types/link_types.png)
 
 - [Page on this site](#page-on-this-site)
 - [Link to a file](#file-link)
@@ -20,7 +20,7 @@ The main types of links listed in this section are accessible to users by defaul
 
 ## Page on this site
 
-![A screenshot of the form "Page on this site"](../_images/01_links_types/page_link_mw_1.png)
+![A screenshot of the form "Page on this site"](./_images/01_links_types/page_link_mw_1.png)
 
 This link type enables the creation of a link to a page within the specified website. The form includes the following fields for completion:
 
@@ -32,7 +32,7 @@ This link type enables the creation of a link to a page within the specified web
 
 ## Link to a file
 
-![A screenshot of the form "Link to a file"](../_images/01_links_types/file_link_mw_1.png)
+![A screenshot of the form "Link to a file"](./_images/01_links_types/file_link_mw_1.png)
 
 This link type enables you to provide a link to a file.
 
@@ -42,7 +42,7 @@ This link type enables you to provide a link to a file.
 
 ## Link to external URL
 
-![A screenshot of the form "Link to external URL"](../_images/01_links_types/external_link_mw_1.png)
+![A screenshot of the form "Link to external URL"](./_images/01_links_types/external_link_mw_1.png)
 
 This link type lets you add a link to resources hosted externally from the site.
 
@@ -52,7 +52,7 @@ This link type lets you add a link to resources hosted externally from the site.
 
 ## Link to email address
 
-![A screenshot of the form "Link to email address"](../_images/01_links_types/email_link_mw_1.png)
+![A screenshot of the form "Link to email address"](./_images/01_links_types/email_link_mw_1.png)
 
 This link type enables you to generate an email link with all essential attributes. Clicking on the link will automatically launch the user's email client and pre-fill the "To" field with a designated email address.
 
@@ -61,7 +61,7 @@ This link type enables you to generate an email link with all essential attribut
 
 ## Phone number
 
-![A screenshot of the form "Phone number"](../_images/01_links_types/phone_link_mw_1.png)
+![A screenshot of the form "Phone number"](./_images/01_links_types/phone_link_mw_1.png)
 
 This type generates a link with phone number that enables users to simply click on the number and initiate a call, eliminating the need to manually jot down or remember it.
 
@@ -77,11 +77,11 @@ As you may have observed, each link type includes a "Link Text" field. This fiel
 Business logic may impose limitations on the types of links accessible to CMS users, thereby restricting the available selection to a limited list.
 For instance, if a particular page allows only links to other pages within the same site, the dropdown menu will exclusively feature the "Page on this site" link type.
 
-![A screenshot of the links type allowed by default](../_images/01_links_types/allowed_types.png)
+![A screenshot of the links type allowed by default](./_images/01_links_types/allowed_types.png)
 
 ## Validation error
 
 As you can see, the main link fields must be filled out. Additionally, some fields are checked to ensure they meet specific standards, such as the correct format for external link URLs. If there's an error, the field will be highlighted in red, and an error message will prompt the user to make corrections.
 
-![A screenshot of the form "Link to a file"](../_images/01_links_types/validation_error.png)
+![A screenshot of the form "Link to a file"](./_images/01_links_types/validation_error.png)
 

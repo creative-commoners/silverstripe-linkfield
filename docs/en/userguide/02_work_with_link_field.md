@@ -17,7 +17,7 @@ The LinkField module offers two primary types of fields: one for creating a sing
 
 ## Single Link field
 
-![A screenshot of the single link field](../_images/02_work_with_link_fields/single_link_field.png)
+![A screenshot of the single link field](./_images/02_work_with_link_fields/single_link_field.png)
 
 The Single LinkField module is designed for managing individual links. To create a new link, users can click on the "Add link" button and select the desired link type from the dropdown menu. This action opens a modal window where users can input the necessary information for creating the link. For detailed information about the default link types, please refer to the ["Link Types"](./01_links_types.md) section.
 
@@ -28,7 +28,7 @@ To view more detailed information or make changes to an existing link, users nee
 
 ## Multi Link field
 
-![A screenshot of the multilink field](../_images/02_work_with_link_fields/multi_link_field.png)
+![A screenshot of the multilink field](./_images/02_work_with_link_fields/multi_link_field.png)
 
 The MultiLink Field functions similarly to the Single Link Field but offers notable advantages. Users can create various links and easily manage them within a single field. Additionally, they can conveniently sort the links as needed, enhancing usability.
 
@@ -37,22 +37,22 @@ The MultiLink Field functions similarly to the Single Link Field but offers nota
 Let's explore an example demonstrating how users can arrange created links using the Drag & Drop feature.
 When hovering the mouse cursor over a link to be moved, it will visually highlight.
 
-![A screenshot of the multilink field](../_images/02_work_with_link_fields/reorder_links_1.png)
+![A screenshot of the multilink field](./_images/02_work_with_link_fields/reorder_links_1.png)
 
 By clicking and holding the left mouse button while over the link, one can drag it to the desired position. After releasing the mouse button, all existing links will adjust accordingly.
 
-![A screenshot of the multilink field](../_images/02_work_with_link_fields/reorder_links_2.png)
+![A screenshot of the multilink field](./_images/02_work_with_link_fields/reorder_links_2.png)
 
 New changes will be automatically saved, and modified links will be identified.
 
-![A screenshot of the multilink field](../_images/02_work_with_link_fields/reorder_links_3.png)
+![A screenshot of the multilink field](./_images/02_work_with_link_fields/reorder_links_3.png)
 
 
 ## Delete Link
 
 The user has the ability to remove an existing link by clicking on the "Archive" button. Upon doing so, the link will be deleted, and the change will be automatically saved.
 
-![A screenshot of the multilink field](../_images/02_work_with_link_fields/delete_button.png)
+![A screenshot of the multilink field](./_images/02_work_with_link_fields/delete_button.png)
 
 ## Disabled or Read only links
 
@@ -60,12 +60,12 @@ At times, it's necessary to limit certain users' access to creating, editing or 
 
 The following examples below illustrate what to expect for the user if editing link capabilities are not available.
 
-![A screenshot of the disabled linkfields](../_images/02_work_with_link_fields/disabled_linkfields.png)
+![A screenshot of the disabled linkfields](./_images/02_work_with_link_fields/disabled_linkfields.png)
 
-![A screenshot of the disabled link](../_images/02_work_with_link_fields/disabled_link.png)
+![A screenshot of the disabled link](./_images/02_work_with_link_fields/disabled_link.png)
 
-## Version history 
+## Version history
 
 Link Field includes versioning support, meaning any changes made are recorded in the change history. Additionally, a badge will appear to indicate interference whenever modifications are made.
 
-![A screenshot of the modified link](../_images/02_work_with_link_fields/modified_link.png)
+![A screenshot of the modified link](./_images/02_work_with_link_fields/modified_link.png)
