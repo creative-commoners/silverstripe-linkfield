@@ -231,7 +231,7 @@ There are many extension hooks in the [`GorriecoeMigrationTask`](api:SilverStrip
 
 Some scenarios where you may need customisations include:
 
-- You had applied the [`Versioned`](api:SilverStripe\Versioned\Versioned) extension to `Link` and want to retain that versioning history
+- You had applied the [`Versioned`](api:SilverStripe\Versioned\Mode\Versioned) extension to `Link` and want to retain that versioning history
 - You subclassed the base `Link` model and need to migrate data from your custom subclass
 - You were relying on features of `gorriecoe/silverstripe-link` or `gorriecoe/silverstripe-linkfield` which don't have a 1-to-1 equivalent in `silverstripe/linkfield`
 

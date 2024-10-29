@@ -18,7 +18,7 @@ use SilverStripe\LinkField\Models\PhoneLink;
 use SilverStripe\LinkField\Models\SiteTreeLink;
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Core\Validation\ValidationException;
-use SilverStripe\Versioned\Versioned;
+use SilverStripe\Versioned\Mode\Versioned;
 use SilverStripe\LinkField\Tests\Extensions\ExternalLinkExtension;
 use SilverStripe\LinkField\Tests\Models\LinkTest\LinkOwner;
 use SilverStripe\LinkField\Services\LinkTypeService;

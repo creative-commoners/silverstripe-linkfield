@@ -5,7 +5,7 @@ namespace SilverStripe\LinkField\Tests\Models\LinkTest;
 use SilverStripe\Dev\TestOnly;
 use SilverStripe\LinkField\Models\Link;
 use SilverStripe\ORM\DataObject;
-use SilverStripe\Versioned\Versioned;
+use SilverStripe\Versioned\Mode\Versioned;
 
 class LinkOwner extends DataObject implements TestOnly
 {

@@ -10,7 +10,7 @@ use SilverStripe\Control\HTTPRequest;
 use SilverStripe\Control\Session;
 use SilverStripe\LinkField\Controllers\LinkFieldController;
 use SilverStripe\LinkField\Tests\Models\LinkTest\LinkOwner;
-use SilverStripe\Versioned\Versioned;
+use SilverStripe\Versioned\Mode\Versioned;
 use SilverStripe\LinkField\Models\Link;
 use PHPUnit\Framework\Attributes\DataProvider;
 

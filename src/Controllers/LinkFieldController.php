@@ -23,7 +23,7 @@ use SilverStripe\ORM\DataObject;
 use SilverStripe\LinkField\Form\LinkField;
 use SilverStripe\LinkField\Form\MultiLinkField;
 use SilverStripe\ORM\Queries\SQLUpdate;
-use SilverStripe\Versioned\Versioned;
+use SilverStripe\Versioned\Mode\Versioned;
 
 class LinkFieldController extends LeftAndMain
 {

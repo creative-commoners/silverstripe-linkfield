@@ -151,13 +151,13 @@ class MyModel extends DataObject
 
 ## Unversioned links
 
-The `Link` model has the [`Versioned`](api:SilverStripe\Versioned\Versioned) extension applied to it by default. If you wish for links to not be versioned, then remove the extension from the `Link` model in the project's `app/_config.php` file.
+The `Link` model has the [`Versioned`](api:SilverStripe\Versioned\Mode\Versioned) extension applied to it by default. If you wish for links to not be versioned, then remove the extension from the `Link` model in the project's `app/_config.php` file.
 
 ```php
 // app/_config.php
 
 use SilverStripe\LinkField\Models\Link;
-use SilverStripe\Versioned\Versioned;
+use SilverStripe\Versioned\Mode\Versioned;
 
 Link::remove_extension(Versioned::class);
 ```
