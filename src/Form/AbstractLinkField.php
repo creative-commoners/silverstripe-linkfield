@@ -3,13 +3,16 @@
 namespace SilverStripe\LinkField\Form;
 
 use DNADesign\Elemental\Controllers\ElementalAreaController;
+use DNADesign\Elemental\Forms\EditFormFactory;
 use DNADesign\Elemental\Models\BaseElement;
 use InvalidArgumentException;
 use LogicException;
 use SilverStripe\Core\Config\Config;
 use SilverStripe\Core\Injector\Injector;
+use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\Form;
 use SilverStripe\Forms\FormField;
+use SilverStripe\Forms\TextField;
 use SilverStripe\LinkField\Models\Link;
 use SilverStripe\LinkField\Services\LinkTypeService;
 use SilverStripe\ORM\DataObject;
@@ -169,11 +172,11 @@ abstract class AbstractLinkField extends FormField
         // Elemental content block
         if (class_exists(BaseElement::class) && is_a($owner, BaseElement::class)) {
             // Remove namespaces from inline editable blocks
-            // This will return an empty array for non-inline editable blocks (e.g. blocks in a gridfield)
-            $arr = ElementalAreaController::removeNamespacesFromFields([$relation => ''], $owner->ID);
-            if (!empty($arr)) {
-                $relation = array_key_first($arr);
-            }
+            $factory = Injector::inst()->get(EditFormFactory::class);
+            $field = TextField::create($relation);
+            $fields = FieldList::create([$field]);
+            $factory->removeNamespaceFromFields($fields, ['Record' => $owner]);
+            $relation = $field->getName();
         }
         return [
             'ID' => $owner->ID,
