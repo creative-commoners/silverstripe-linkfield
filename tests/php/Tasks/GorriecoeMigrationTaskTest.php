@@ -319,7 +319,7 @@ class GorriecoeMigrationTaskTest extends SapphireTest
     #[DataProvider('provideMigrateHasManyRelations')]
     public function testMigrateHasManyRelations(
         array $hasManyConfig,
-        string $ownerFixture = null,
+        ?string $ownerFixture = null,
         array $addColumns = []
     ): void {
         GorriecoeMigrationTask::config()->set('has_many_links_data', $hasManyConfig);
